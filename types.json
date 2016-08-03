@@ -5,6 +5,36 @@
             "category": 0,
             "name": "personal",
             "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 1,
+            "category": 0,
+            "name": "commercial",
+            "description": "Fireworks intended for large events. Fireworks must be handled by professionals."
+        },
+        {
+            "id": 2,
+            "category": 1,
+            "name": "personal",
+            "description": "Intended for small projects at home"
+        },
+        {
+            "id": 3,
+            "category": 1,
+            "name": "commercial",
+            "description": "Intended for large commercial projects"
+        },
+        {
+            "id": 4,
+            "category": 2,
+            "name": "storage",
+            "description": "Intended to store explosive products"
+        },
+        {
+            "id": 5,
+            "category": 2,
+            "name": "personal",
+            "description": "Intended to keep users of explosive products safe"
         }
     ]
 }

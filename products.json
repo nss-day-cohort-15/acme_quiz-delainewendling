@@ -1,10 +1,112 @@
 {
-    "products": [{
-        "fairy_sparklers": {
-            "id": 0,
-            "type": 0,
-            "name": "Fairy Sparklers",
-            "description": "Multi-colored sparklers that are safe for any age."
-        }
-    }]
+    "products": [
+      {
+          "id": 0,
+          "type": 0,
+          "name": "Fairy Sparklers",
+          "description": "Multi-colored sparklers that are safe for any age."
+      },
+      {
+          "id": 1,
+          "type": 0,
+          "name": "Roman Candles",
+          "description": "Firework"
+      },
+      {
+          "id": 2,
+          "type": 0,
+          "name": "Personal Firework 3",
+          "description": "Firework"
+      },
+      {
+          "id": 3,
+          "type": 1,
+          "name": "Commercial Firework 1",
+          "description": "Firework"
+      },
+      {
+          "id": 4,
+          "type": 1,
+          "name": "Commercial Firework 2",
+          "description": "Firework"
+      },
+      {
+          "id": 5,
+          "type": 1,
+          "name": "Commercial Firework 3",
+          "description": "Firework"
+      },
+      {
+          "id": 6,
+          "type": 2,
+          "name": "Personal Demolition 1",
+          "description": "Firework"
+      },
+      {
+          "id": 7,
+          "type": 2,
+          "name": "Personal Demolition 2",
+          "description": "Firework"
+      },
+      {
+          "id": 8,
+          "type": 2,
+          "name": "Personal Demolition 3",
+          "description": "Firework"
+      },
+      {
+          "id": 9,
+          "type": 3,
+          "name": "Commercial Demolition 1",
+          "description": "Firework"
+      },
+      {
+          "id": 10,
+          "type": 3,
+          "name": "Commercial Demolition 2",
+          "description": "Firework"
+      },
+      {
+          "id": 11,
+          "type": 3,
+          "name": "Commercial Demolition 3",
+          "description": "Firework"
+      },
+      {
+          "id": 12,
+          "type": 4,
+          "name": "Storage 1",
+          "description": "Firework"
+      },
+      {
+          "id": 13,
+          "type": 4,
+          "name": "Storage 2",
+          "description": "Firework"
+      },
+      {
+          "id": 15,
+          "type": 4,
+          "name": "Storage 3",
+          "description": "Firework"
+      },
+      {
+          "id": 16,
+          "type": 5,
+          "name": "Personal Safety 1",
+          "description": "Firework"
+      },
+      {
+          "id": 17,
+          "type": 5,
+          "name": "Personal Safety 2",
+          "description": "Firework"
+      },
+      {
+          "id": 18,
+          "type": 5,
+          "name": "Personal Safety 3",
+          "description": "Firework"
+      }
+    ]
 }
