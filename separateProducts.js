@@ -1,55 +1,37 @@
 var Explosion = (function(explosion){
-  var correctProducts = [];
+  //Functions each go through the products array and pull out the products that have a type related to fireworks, demolition, or safety. These products are pushed to a new array filled with only the desired items. Afterward, this array is used as the last argument in the addItems method to print the correct products to the screen.
+  //*********Fireworks**********//
   explosion.fireworks = function(categories, types, products){
+    var correctFireworks = [];
+    $('#productContainer').html("")
     products.forEach((product)=>{
       if (product.type === 0 || product.type === 1){
-         correctProducts.push(product)
+         correctFireworks.push(product)
       }
     })
-    correctProducts.forEach((product)=>{
-      $('#productContainer').append(`
-        <div class="col-xs-4">
-          <div class="spacer">
-            <h4 class="category"> Category: ${categories[0].name} </h4>
-            <p class="type"> Type: ${product.type}</p>
-            <p class="productTitle"> ${product.name} </p>
-            <p class="productDescription"> ${product.description} </p>
-              `)
-        })
+    explosion.addItems(categories, types, products, correctFireworks)
     }
+    //*********Demolition**********//
     explosion.demolition = function(categories, types, products){
-    products.forEach((product)=>{
-      if (product.type === 2 || product.type === 3){
-         correctProducts.push(product)
-      }
-    })
-    correctProducts.forEach((product)=>{
-      $('#productContainer').append(`
-        <div class="col-xs-4">
-          <div class="spacer">
-            <h4 class="category"> Category: ${categories[1].name} </h4>
-            <p class="type"> Type: ${product.type}</p>
-            <p class="productTitle"> ${product.name} </p>
-            <p class="productDescription"> ${product.description} </p>
-              `)
-        })
+      var correctDemolition = [];
+      $('#productContainer').html("")
+      products.forEach((product)=>{
+        if (product.type === 2 || product.type === 3){
+           correctDemolition.push(product)
+        }
+      })
+      explosion.addItems(categories, types, products, correctDemolition)
     }
+    //*********Safety**********//
     explosion.safety = function(categories, types, products){
-    products.forEach((product)=>{
-      if (product.type === 4 || product.type === 5){
-         correctProducts.push(product)
-      }
-    })
-    correctProducts.forEach((product)=>{
-      $('#productContainer').append(`
-        <div class="col-xs-4">
-          <div class="spacer">
-            <h4 class="category"> Category: ${categories[2].name} </h4>
-            <p class="type"> Type: ${product.type}</p>
-            <p class="productTitle"> ${product.name} </p>
-            <p class="productDescription"> ${product.description} </p>
-              `)
-        })
+      var correctSafety = [];
+      $('#productContainer').html("")
+      products.forEach((product)=>{
+        if (product.type === 4 || product.type === 5){
+           correctSafety.push(product)
+        }
+      })
+      explosion.addItems(categories, types, products, correctSafety)
     }
   return explosion
 })(Explosion || {})

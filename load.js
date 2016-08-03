@@ -2,6 +2,7 @@ var Explosion = (function (explosion) {
   var categories;
   var types;
   var products;
+  //This function uses promises to grab all of the data from the json files
   explosion.loadItems = function(){
     Promise.all([
       $.getJSON('categories.json'),
@@ -20,24 +21,3 @@ var Explosion = (function (explosion) {
 })(Explosion || {})
 Explosion.loadItems()
 
-  // explosion.loadItems = function (idNumber) {
-  //   console.log(idNumber)
-  // },
-  // explosion.getCategories = function() {
-  //   return $.getJSON("categories.json")
-  //     .then(function (res) {
-  //       return res.categories
-  //     })
-  // },
-  // explosion.getTypes = function() {
-  //   return $.getJSON("types.json")
-  //     .then(function (res) {
-  //       return res.types
-  //     })
-  // },
-  // explosion.getProducts = function() {
-  //   return $.getJSON("products.json")
-  //     .then(function (res) {
-  //       return res.products
-  //     })
-  // }
